@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BMI calculator</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="topArea">
+      <div class='logo'></div>
+      <div class='inputArea'>
+        <label for="height">身高cm</label>
+        <input type="number" id="height" placeholder="請輸入身高" pattern="[0-9]*">
+        <label for="weight">體重kg</label>
+        <input type="number" id="weight" placeholder="請輸入體重" pattern="[0-9]*">
+      </div>
+      <div>
+        <div class="btnCircle">
+          <p>看結果</p>
+          <div class="loopSign"></div>
+        </div>
+      </div>
+    </header>
+    <div class="content">
+      <div class="contentBox">
+        <h1>BMI紀錄</h1>
+      </div>
+      <div class="listContent">
+        <!-- <ul class="dataList">
+        <li class="status">理想</li>
+        <li class="BMI">BMI<span>19.95</span></li>
+        <li class="weight">weight<span> 69kg</span></li>
+        <li class="height">height<span> 186cm</span></li>
+        <ii class="date">13-2-2020</ii>
+        <li class="clean">刪除</li>
+      </ul> -->
+        <!-- ul>li*5>ul>li:class="aa"*5
+     ul>li*5>ul>li:class="aa"*5  -->
+      </div>
+    </div>
+    <footer class="footer">
+      <div class="footerLogo"></div>
+    </footer>
+    <script src="./all.js"></script>
+  </div>
+</body>
+
+</html>

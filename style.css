@@ -1,0 +1,302 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  font-family: "Microsoft JhengHei", "Helvetica Nueue", Arial, Sans Serif;
+}
+
+.wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topArea {
+  width: 1024px;
+  height: 300px;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  width: 117px;
+  height: 117px;
+  background-image: url("https://github.com/rccj/images/blob/master/sources/Kaohsiung/BMICLogo.png?raw=true");
+}
+
+.inputArea {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  margin: 10%;
+}
+
+.inputArea>label {
+  color: #FFD366;
+  font-size: 18px;
+  margin: 5px 0;
+}
+
+.inputArea>input {
+  background-color: rgba(255, 255, 255, 0.18);
+  border: 2px #FFD366 solid;
+  height: 40px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-size: 24px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  outline: none;
+}
+
+.btnCircle {
+  cursor: pointer;
+  background-color: #FFD366;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  position: relative;
+  color: #424242;
+  font-size: 24px;
+  box-sizing: border-box;
+}
+
+.loopSign {
+  display: none;
+  background-image: url('https://github.com/rccj/images/blob/master/sources/Kaohsiung/icons_loop.png?raw=true');
+  position: absolute;
+  right: -10px;
+  bottom: 10px;
+  width: 30px;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 50%;
+  border: 3px solid #424242;
+  transition: 0.5s ease;
+}
+
+/* 各個BMI區間的顏色 */
+
+.btn_A {
+  background: none;
+  border: 6px solid #86D73E;
+  color: #86D73E;
+}
+
+.btn_A .loopSign {
+  display: block;
+  background-color: #86D73E;
+}
+
+.btn_B {
+  background: none;
+  border: 6px solid #31BAF9;
+  color: #31BAF9;
+}
+
+.btn_B .loopSign {
+  display: block;
+  background-color: #31BAF9;
+}
+
+.btn_C {
+  background: none;
+  border: 6px solid #FF982D;
+  color: #FF982D;
+}
+
+.btn_C .loopSign {
+  display: block;
+  background-color: #FF982D;
+}
+
+.btn_D {
+  background: none;
+  border: 6px solid #FF6C03;
+  color: #FF6C03;
+}
+
+.btn_D .loopSign {
+  display: block;
+  background-color: #FF6C03;
+}
+
+.btn_E {
+  background: none;
+  border: 6px solid#FF6C03;
+  color: #FF6C03;
+}
+
+.btn_E .loopSign {
+  display: block;
+  background-color: #FF6C03;
+}
+
+.btn_F {
+  background: none;
+  border: 6px solid #FF1200;
+  color: #FF1200;
+}
+
+.btn_F .loopSign {
+  display: block;
+  background-color: #FF1200;
+}
+
+/* 按鈕效果 */
+
+.btnCircle:active {
+  background: #DEA921;
+}
+
+.btnCircle:hover {
+  box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+}
+
+/* 中間內容 */
+
+.content {
+  width: 1024px;
+  background-color: #F5F5F5;
+  padding-bottom: 30px;
+}
+
+.contentBox {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+
+.contentBox h1 {
+  margin: auto;
+  color: #424242;
+  font-size: 24px;
+}
+.listContent{
+  width: 100%;
+}
+
+.dataList {
+  width: 624px;
+  height: 62px;
+  background-color: #fff;
+  margin: 0 auto 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-left: 7px solid #86D73F;
+  box-sizing: border-box;
+}
+
+.dataList>li {
+  width: 17%
+}
+
+.dataList :last-child {
+  text-align: center;
+}
+
+.del{
+  display:flex;
+}
+
+.dataList:hover{
+  box-shadow: 0 1px 6px 3px rgba(255, 195, 49, 0.64);
+
+}
+
+/* 各區間的左邊邊筐顏色 */
+
+.level_A {
+  border-left: 7px solid #86D73F;
+}
+
+.level_B {
+  border-left: 7px solid #31BAF9;
+}
+
+.level_C {
+  border-left: 7px solid #FF982D;
+}
+
+.level_D {
+  border-left: 7px solid #FF6C03;
+}
+
+.level_E {
+  border-left: 7px solid #FF6C03;
+}
+
+.level_F {
+  border-left: 7px solid #FF1200;
+}
+
+.status {
+  font-size: 20px;
+  color: #4A4A4A;
+}
+
+.BMI, .weight, .height {
+  font-size: 12px;
+  color: #424242;
+}
+
+.BMI>span, .weight>span, .height>span {
+  font-size: 20px;
+  color: #4A4A4A;
+}
+
+.date {
+  font-size: 15px;
+  color: #4A4A4A;
+}
+/* 刪除按鈕 */
+.del{
+  border:2px black solid;
+  /* z-index: -1; */
+}
+
+/* 尾巴 */
+
+.footer {
+  width: 1024px;
+  height: 90px;
+  background-color: #FFD366;
+  display: flex;
+}
+
+.footerLogo {
+  width: 55px;
+  height: 55px;
+  background-repeat: no-repeat;
+  background-image: url("https://github.com/rccj/images/blob/master/sources/Kaohsiung/BMICLogo.png?raw=true");
+  background-size: cover;
+  filter: brightness(0.3);
+  margin: auto;
+}
